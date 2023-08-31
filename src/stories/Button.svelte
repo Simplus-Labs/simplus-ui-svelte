@@ -1,36 +1,18 @@
-<script>
-	import './button.css';
-
-	/**
-	 * Is this the principal call to action on the page?
-	 */
+<script lang="ts">
 	export let primary = false;
+	export let size: 'small' | 'medium' | 'large' = 'medium';
+	export let label = '';
 
-	/**
-	 * @type {string} What background color to use
-	 */
-	export let backgroundColor = undefined;
+	const BASE_BUTTON_CLASS =
+		'cursor-pointer rounded-full border-2 font-bold leading-none inline-block';
 
-	/**
-	 * @type {'small' | 'medium' | 'large'} How large should the button be?
-	 */
-	export let size = 'medium';
+	$: primaryClass = primary
+		? 'text-white bg-pink-600 border-pink-600 dark:bg-pink-700 dark:border-pink-700 hover:bg-pink-500 dark:hover:bg-pink-600'
+		: 'text-neutral-600 bg-transparent border-neutral-600 dark:text-neutral-200 dark:border-neutral-200 hover:bg-pink-200 dark:hover:bg-pink-900';
 
-	/**
-	 * @type {string} Button contents
-	 */
-	export let label;
-
-	$: mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-
-	$: style = backgroundColor ? `background-color: ${backgroundColor}` : '';
+	$: sizeClass = size === 'small' ? 'px-4 py-2.5' : size === 'large' ? 'px-6 py-3' : 'px-5 py-2.5';
 </script>
 
-<button
-	type="button"
-	class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-	{style}
-	on:click
->
+<button type="button" class="{BASE_BUTTON_CLASS} {sizeClass} {primaryClass}" on:click>
 	{label}
 </button>
