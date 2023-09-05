@@ -4,7 +4,7 @@
 	export let label = '';
 
 	const BASE_BUTTON_CLASS =
-		'cursor-pointer rounded-full border-2 font-bold leading-none inline-block';
+		'cursor-pointer rounded-full border-2 leading-none inline-block font-spaceGrotesk';
 
 	$: primaryClass = primary
 		? 'text-white bg-pink-600 border-pink-600 dark:bg-pink-700 dark:border-pink-700 hover:bg-pink-500 dark:hover:bg-pink-600'

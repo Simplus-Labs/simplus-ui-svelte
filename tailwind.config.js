@@ -2,7 +2,12 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				spaceGrotesk: ['Space Grotesk', 'sans-serif'],
+				['spaceGrotesk-bold']: ['Space Grotesk Bold']
+			}
+		}
 	},
 	plugins: []
 };
