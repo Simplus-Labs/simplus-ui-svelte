@@ -3,15 +3,38 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'Space Grotesk';
-	src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf');
-	font-weight: normal;
-	font-display: swap;
-}
-
-@font-face {
 	font-family: 'Space Grotesk Bold';
 	src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf');
 	font-weight: bold;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk Light';
+	src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf');
+	font-weight: 300;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk Regular';
+	src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf');
+	font-weight: 00;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf');
+	font-weight: 500;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk semiBold';
+	src: url('./fonts/SpaceGrotesk/SpaceGrotesk-SemiBold.ttf');
+	font-weight: 600;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk bold';
+	src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf');
+	font-weight: 700;
 	font-display: swap;
 }

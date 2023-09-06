@@ -25,8 +25,7 @@ export default {
 				}
 			},
 			fontFamily: {
-				spaceGrotesk: ['Space Grotesk', 'sans-serif'],
-				['spaceGrotesk-bold']: ['Space Grotesk Bold']
+				grotesk: ['Space Grotesk']
 			}
 		}
 	},

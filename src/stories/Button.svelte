@@ -4,7 +4,7 @@
 	export let label = '';
 
 	const BASE_BUTTON_CLASS =
-		'cursor-pointer rounded-md leading-none inline-block font-spaceGrotesk px-0.5 py-0.5';
+		'cursor-pointer rounded-md leading-none inline-block font-grotesk px-0.5 py-0.5';
 
 	$: primaryButton = primary
 		? 'text-white bg-green hover:bg-green-500'
